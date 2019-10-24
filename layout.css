@@ -221,10 +221,11 @@ height: 40px;
     background-image: url(image/fond-moto.jpg);
 }
 #page3{
-    margin-top:50vh;
     height: 100vh;
     background-size: 100%;
-    color:white;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(image/fond-moto.jpg);
 }
 
 
@@ -263,15 +264,22 @@ height: 40px;
     opacity: 1;
  }
 
- .trapeze{
+.trapeze{
 
   width: 50vw;
   height: 100vh;
   transform: skew(20deg);
   background: black;
+ }
 
-
-  
+.trapeze2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  transform: skew(-160deg);
+  background: black;
  }
 
  .trapeze-correct{
@@ -284,21 +292,70 @@ height: 40px;
   z-index: 1;
  }
 
+.trapeze-correct2{
+  position: absolute;
+  width: 30vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background: black;
+  z-index: 1;
+ }
+
 .sms{
     padding-left: 11vw;
-    padding-top: 3vh;
     opacity: .5;
 }
 
-h2{
+.titre{
     color: #FF8205;
     font-size: 50px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    padding-top: 8vh;
+    padding-bottom: 4vh;
 }
 
+.titre2{
+    text-align: left;
+    color: #FF8205;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 8vh;
+    padding-bottom: 4vh;
+}
 
 .occasion{
     font-size: 70px;
+    padding-top: 8vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FF8205;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover{
+    color: black;
+    transition: 1s ease;
+    transition-property: color, padding, margin-top, width;
+    padding: 25px;
+    margin-top: 9vh;
+    width: 75%;
+}
+
+.lorem{
     font-family: 'Montserrat', sans-serif;
 }
