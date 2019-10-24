@@ -37,6 +37,7 @@ p{
 
 video{
     width: 100vw;
+    size: 100%;
 }
 
 .pop{
@@ -101,6 +102,34 @@ header{
     margin: 0 !important;
 
 }
+
+.logo{
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 50px;
+}
+
+.logo-moto{
+    margin-left: 2vw;
+    height:5vh; 
+}
+
+.moto{
+    margin-left: 2vw;
+}
+
+.user,.achat{
+    border-radius: 0;
+    height: 4vh; 
+}
+.achat{
+    margin-left: 2vw;
+}
+
+.user{
+    margin-left: 38vw;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -114,22 +143,31 @@ li {
   margin:0;
   padding:0;
   line-height: 10vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
 li a {
   color: white;
   text-align: center;
-  margin-left: 30px;
   text-decoration: none;
+}
+
+.margin-left{
+    margin-left: 2vw;
 }
 
 li a:hover{
   color : #FF8000;
+  transition: color .2s ease;
 }
 
 li a.active{
   color: #FF8000;
+}
+
+a img:hover{
+    filter: brightness(0) invert(1);
 }
 
 .first-page{
