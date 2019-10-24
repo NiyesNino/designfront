@@ -1,0 +1,37 @@
+/* Utiliser la feuille de style shame pour essayer des trucs */
+/* Ici nous avons mis quelques couleurs pour l'exemple */
+.column-green {
+  background: green;
+}
+
+.column-yellow {
+  background: yellow;
+}
+
+.column-orange {
+  background: orange;
+}
+
+.column-pink {
+  background: pink;
+}
+
+.test-title {
+  display: block;
+  border: 1px solid grey;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1407px) {
+ 
+}
+
+/* FullHD */
+@media screen and (min-width: 1408px) {
+
+}

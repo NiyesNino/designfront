@@ -1,1 +1,25 @@
+/*
+ * BULMA
+ 
 
+/* Attention il ne faut pas toucher aux fichiers dans le répertoire bulma/ */
+@import "bulma/base/minireset.css";
+@import "bulma/elements/container.css";
+@import "bulma/grid/columns.css";
+@import "bulma/layout/section.css";
+
+/*
+ * LAYOUT
+ */
+@import "layout.css";
+
+
+/*
+ * LAYOUT RESPONSIVE
+ */
+@import "layout-responsive.css";
+
+/*
+ * SHAME
+ */
+@import "shame.css";

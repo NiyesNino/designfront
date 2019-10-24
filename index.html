@@ -1,1 +1,126 @@
-zieofozefojzeofuhzefzefji
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Speed Moto Services</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arya&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    </head>
+    <body>
+        <section class="pop">
+            <div id="hidden">
+                <h1 class="oui">Speed Moto Services présente...</h1>
+            </div>
+        </section>
+        <header class="columns">
+            <ul class="column is-12-desktop" >
+                <li><a href="#news"><img src="image/logo.gif" alt="Logo nom blanc" style="height:10vh;"></a></li>
+                <li><a href="#page2" class="active">Speed Moto Services</a></li>
+                <li><a href="#first-page">Accueil</a></li>
+                <li><a href="nous.html">À propos de nous</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li style="float:right"><a href="#news"> Inscription </a></li>
+                <li style="float:right"><a href="#news"> Connexion </a></li>
+            </ul>
+        </header>
+        <section id="first-page"  class="first-page">
+            <video preload="preload"    autoplay="autoplay" muted="muted" loop="loop">
+                <source src="image/bk.mp4" type="video/mp4">
+            </video>
+                <a href="#page2"><img src="image/arrow.png" class="arrow" alt="Arrow" ></a>
+        </section>
+        <div id="page2">
+            <div class="columns is-multiline">
+                <div class="column is-12">
+                    <h1 class="column is-2 is-offset-1">Accueil</h1>
+                    <p class="column is-2 is-offset-1 speed">Speed Moto Services</p>
+                </div>
+                <div class="column is-4-desktop is-offset-1-desktop" style="margin-top:20vh;">
+                    <h2 style="color:white"> Qu'est-ce que le Lorem Ipsum?</h2>
+                    <p  style="color:white"> Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. </p>
+                </div>
+                <div class="column is-4-desktop is-offset-2-desktop" style="margin-top:15vh;">
+                    <div id="container">
+                        <img src="image/image1.jpg" alt="Play Image" class="play" />
+                        <img src="image/image2.jpg" alt="Picture Image" class="picture" />
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-4-desktop is-offset-1-desktop" >
+                        <img src="image/image2.jpg" alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth">
+                </div>
+                <div class="column is-4-desktop is-offset-2-desktop">
+                        <h2 style="color:white">Qu'est-ce que le Lorem Ipsum ?</h2>
+                        <p style="color:white"> Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="page3" class="columns is-multiline " >
+            <div class="column is-12">
+                <h1 class="contact column is-11 is-offset-1">Nous contacter</h1>
+                <p class="column is-11 is-offset-1">Si vous avez des questions, n'hésitez pas à nous contacter</p>
+                <p class="column is-11 is-offset-1">Nous vous répondrons dans un délais de 48heures</p>
+                <form class="column is-12" method="post">
+                    <label>Nom</label>
+                    <input type="text" name="nom" required>
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                    <label>Message</label>
+                    <textarea name="message" required></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+
+                <!-- <?php
+                if(isset($_POST['message'])){
+                    $entete  = 'MIME-Version: 1.0' . "\r\n";
+                    $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+                    $entete .= 'From: ' . $_POST['email'] . "\r\n";
+            
+                    $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
+                    <p><b>Nom : </b>' . $_POST['nom'] . '<br>
+                    <b>Email : </b>' . $_POST['email'] . '<br>
+                    <b>Message : </b>' . $_POST['message'] . '</p>';
+            
+                    $retour = mail('destinataire@free.fr', 'Envoi depuis page Contact', $message, $entete);
+                    if($retour) {
+                        echo '<p>Votre message a bien été envoyé.</p>';
+                    }
+                }
+                ?> -->
+        </div>
+        <script src="jquery.stellar.js"></script>   
+        <script type="text/javascript">
+            $.stellar();
+        </script>
+        <script type="text/javascript">
+        window.onload = init;
+
+        function init() {
+            const element = document.querySelector("#hidden");
+            element.classList.add("hidden-2");
+            const element2 = document.querySelector(".oui");
+            element2.classList.add("oui-2");
+            setTimeout(suite, 1000);
+        }
+        function suite() {
+            const element4 = document.querySelector(".oui-2");
+            element4.classList.add("oui-3");
+            setTimeout(suite2, 1000);
+        }
+        function suite2() {
+            const element5 = document.querySelector(".pop");
+            element5.classList.add("first-page2")
+            setTimeout(suite3, 1000);
+        }
+        function suite3() {
+            const element6 = document.querySelector(".first-page2");
+            element6.classList.add("first-page3")
+        }
+    </script>
+    </body>
+</html>

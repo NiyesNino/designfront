@@ -1,0 +1,23 @@
+/*
+ * Mobile
+ */
+@media screen and (max-width: 768px) {
+  /* Insérer le style pour mobile ici */
+
+  
+
+
+/*
+ * Tablet
+ */
+@media screen and (min-width: 769px) and (max-width: 1407px) {
+  /* Insérer le style pour tablet ici */
+
+
+
+
+/*
+ * FullHD
+ */
+@media screen and (min-width: 1408px) {
+  
