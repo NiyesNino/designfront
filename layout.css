@@ -361,3 +361,11 @@ height: 40px;
 .lorem{
     font-family: 'Montserrat', sans-serif;
 }
+
+.photo{
+    height: 80px;
+    border-radius: 50%;
+}
+
+.photo1{
+}
