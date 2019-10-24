@@ -345,6 +345,8 @@ height: 40px;
     border-radius: 50px;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    transition-property: color, padding, margin-top, width;
+    transition: 1s ease;
 }
 
 .btn:hover{
