@@ -17,12 +17,12 @@
         <header class="columns">
             <ul class="column is-12-desktop" >
                 <li><a class="logo-moto-link" href="#"><img src="image/logo.png" alt="Logo nom blanc" class="logo logo-moto"></a></li>
-                <li><a href="" class="active moto">Speed Moto Services</a></li>
-                <li class="margin-left"><a href="#first-page">Accueil</a></li>
-                <li class="margin-left"><a href="#page2">Occasion</a></li>
-                <li class="margin-left"><a href="#page3">À-propos</a></li>
-                <li class="margin-left"><a href="#page4">Boutique</a></li>
-                <li class="margin-left"><a href="#page5">Contact</a></li>
+                <li><a href="" class="constant-active moto">Speed Moto Services</a></li>
+                <li class="margin-left"><a class="accueil-link"  href="#first-page">Accueil</a></li>
+                <li class="margin-left"><a class="occasion-link" href="#page2">Occasion</a></li>
+                <li class="margin-left"><a class="a-propos-link" href="#page3">À-propos</a></li>
+                <li class="margin-left"><a class="boutique-link" href="#page4">Boutique</a></li>
+                <li class="margin-left"><a class="contact-link" href="#page5">Contact</a></li>
                 <li><a href="#news"><img  class="logo user" src="image/users.png"></a></li>
                 <li><a href="#news"><img  class="logo achat" src="image/logo-achat.png"></a></li>
             </ul>
@@ -79,7 +79,7 @@
             <a href="#page4"><img src="image/arrow.png" class="arrow" alt="Arrow" ></a>
         </div>
 
-        <div id="page4" class="columns is-multiline">
+        <div id="page4" data-stellar-background-ratio="0.3" class="columns is-multiline">
         	<div class="column is-12">
 	        	<h1 class="boutique">Boutique</h1>
 	       		<p class="sms-boutique">Speed Moto Services</p>
@@ -87,94 +87,71 @@
 	       	<section class="carousel-container column is-12">
 				<div class="slideshow-container">
 					<div class="mySlides fade">
-					  <div class="numbertext">1 / 8</div>
-					  <img src="image/nino.jpg" alt="Comment obtenir un rendez-vous rapidement? c'est très simple tout est expliqué sur la droite">
+					  <div class="numbertext">1 / 3</div>
+					  <img src="image/casque.png" alt="Comment obtenir un rendez-vous rapidement? c'est très simple tout est expliqué sur la droite">
+						<p class="objet">Magnifique casque rouge</p>
+						<p class="prix">120€</p>
 					</div>
 
 					<div class="mySlides fade">
-					  <div class="numbertext">2 / 8</div>
-					  <img src="image/nino.jpg" alt="1. S'inscrire simplement en quelques clics. La première étape est un petit questionnaire qui vous permet de créer vos identifiants">
+					  <div class="numbertext">2 / 3</div>
+					  <img src="image/casque2.png" alt="1. S'inscrire simplement en quelques clics. La première étape est un petit questionnaire qui vous permet de créer vos identifiants">
+					  <p class="objet">Magnifique casque orange</p>
+					  <p class="prix">120€</p>
 					</div>
 
 					<div class="mySlides fade">
-					  <div class="numbertext">3 / 8</div>
-					  <img src="image/nino.jpg" alt="2. Choisir un accompagnement adapté. La deuxième étape consiste à choisir un professionnel adapté à son besoin. Des exemples types seront proposé pour orienter le choix du professionnel." >
+					  <div class="numbertext">3 / 3</div>
+					  <img src="image/casque3.png" alt="2. Choisir un accompagnement adapté. La deuxième étape consiste à choisir un professionnel adapté à son besoin. Des exemples types seront proposé pour orienter le choix du professionnel." >
+					  <p class="objet">Magnifique casque bleu</p>
+					  <p class="prix">120€</p>
 					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext">4 / 8</div>
-					  <img src="image/nino.jpg" alt="3. Prendre rendez-vous. Pour prendre rendez-vous nous aurons besoin de quelques informations" >
-					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext">5 / 8</div>
-					  <img src="image/nino.jpg" alt="4. Sélectionner un consultant. la dernière ligne droite! Il reste plus qu'à choisir un consultant qui correspond à ses besoins en fonction des profils proposés" >
-					</div>
-				
-
 					<a class="prev">&#10094;</a>
 					<a class="next">&#10095;</a>
 
 				</div>	
+				<hr>
 				<div class="slideshow-container">
 					<div class="mySlides fade">
-					  <div class="numbertext">1 / 8</div>
-					  <img src="image/nino.jpg" alt="Comment obtenir un rendez-vous rapidement? c'est très simple tout est expliqué sur la droite">
+					  <div class="numbertext">1 / 3</div>
+					  <img src="image/combi.png" alt="Comment obtenir un rendez-vous rapidement? c'est très simple tout est expliqué sur la droite">
+					  <p class="objet">Magnifique combinaison rouge</p>
+					  <p class="prix">320€</p>
 					</div>
 
 					<div class="mySlides fade">
-					  <div class="numbertext">2 / 8</div>
-					  <img src="image/nino.jpg" alt="1. S'inscrire simplement en quelques clics. La première étape est un petit questionnaire qui vous permet de créer vos identifiants">
+					  <div class="numbertext">2 / 3</div>
+					  <img src="image/combi2.png" alt="1. S'inscrire simplement en quelques clics. La première étape est un petit questionnaire qui vous permet de créer vos identifiants">
+					  <p class="objet">Magnifique combinaison bleu</p>
+					  <p class="prix">320€</p>
 					</div>
 
 					<div class="mySlides fade">
-					  <div class="numbertext">3 / 8</div>
-					  <img src="image/nino.jpg" alt="2. Choisir un accompagnement adapté. La deuxième étape consiste à choisir un professionnel adapté à son besoin. Des exemples types seront proposé pour orienter le choix du professionnel." >
+					  <div class="numbertext">3 / 3</div>
+					  <img src="image/combi3.png" alt="2. Choisir un accompagnement adapté. La deuxième étape consiste à choisir un professionnel adapté à son besoin. Des exemples types seront proposé pour orienter le choix du professionnel." >
+					  <p class="objet">Magnifique combinaison vert</p>
+					  <p class="prix">320€</p>
 					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext">4 / 8</div>
-					  <img src="image/nino.jpg" alt="3. Prendre rendez-vous. Pour prendre rendez-vous nous aurons besoin de quelques informations" >
-					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext">5 / 8</div>
-					  <img src="image/nino.jpg" alt="4. Sélectionner un consultant. la dernière ligne droite! Il reste plus qu'à choisir un consultant qui correspond à ses besoins en fonction des profils proposés" >
-					</div>
-				
-
 					<a class="prev">&#10094;</a>
 					<a class="next">&#10095;</a>
 
 				</div>	
-
+				<hr>
 				<div class="slideshow-container">
 					<div class="mySlides fade">
-					  <div class="numbertext">1 / 8</div>
-					  <img src="image/nino.jpg" alt="Comment obtenir un rendez-vous rapidement? c'est très simple tout est expliqué sur la droite">
+					  <div class="numbertext">1 / 3</div>
+					  <img src="image/masque.png" alt="Comment obtenir un rendez-vous rapidement? c'est très simple tout est expliqué sur la droite">
 					</div>
 
 					<div class="mySlides fade">
-					  <div class="numbertext">2 / 8</div>
-					  <img src="image/nino.jpg" alt="1. S'inscrire simplement en quelques clics. La première étape est un petit questionnaire qui vous permet de créer vos identifiants">
+					  <div class="numbertext">2 / 3</div>
+					  <img src="image/masque.png" alt="1. S'inscrire simplement en quelques clics. La première étape est un petit questionnaire qui vous permet de créer vos identifiants">
 					</div>
 
 					<div class="mySlides fade">
-					  <div class="numbertext">3 / 8</div>
-					  <img src="image/nino.jpg" alt="2. Choisir un accompagnement adapté. La deuxième étape consiste à choisir un professionnel adapté à son besoin. Des exemples types seront proposé pour orienter le choix du professionnel." >
+					  <div class="numbertext">3 / 3</div>
+					  <img src="image/masque.png" alt="2. Choisir un accompagnement adapté. La deuxième étape consiste à choisir un professionnel adapté à son besoin. Des exemples types seront proposé pour orienter le choix du professionnel." >
 					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext">4 / 8</div>
-					  <img src="image/nino.jpg" alt="3. Prendre rendez-vous. Pour prendre rendez-vous nous aurons besoin de quelques informations" >
-					</div>
-
-					<div class="mySlides fade">
-					  <div class="numbertext">5 / 8</div>
-					  <img src="image/nino.jpg" alt="4. Sélectionner un consultant. la dernière ligne droite! Il reste plus qu'à choisir un consultant qui correspond à ses besoins en fonction des profils proposés" >
-					</div>
-				
-
 					<a class="prev">&#10094;</a>
 					<a class="next">&#10095;</a>
 
@@ -280,7 +257,8 @@
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script src="jquery.stellar.js"></script> 
         <script src="script/carousel.js"></script>  
-        <script src="script/onload-animation.js"></script> 
+        <script src="script/onload-animation.js"></script>
+        <script src="script/scroll.js"></script> 
         <script type="text/javascript">
             $.stellar();
         </script>
