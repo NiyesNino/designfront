@@ -14,8 +14,34 @@ h1{
     font-family: 'Merriweather', serif;
 }
 
+.left-menu{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  height: 50vh;
+  width: 3vw;
+}
+
+.left-menu ul{
+  background-color: transparent;
+}
+
+.point{
+  width: 2px;
+  height: 10px;
+  background-color: white;
+}
+
 p{
     color: white;
+}
+.lorem-2{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 10vw;
+  margin: 10vh;
 }
 
 .speed{
@@ -110,8 +136,11 @@ header{
   border-radius: 50px;
 }
 
-.logo-moto{
+.logo-moto-link{
     margin-left: 2vw;
+}
+
+.logo-moto{
     height:5vh; 
 }
 
@@ -220,13 +249,32 @@ height: 40px;
     position: relative;
     background-image: url(image/fond-moto.jpg);
 }
+
 #page3{
     height: 100vh;
     background-size: 100%;
     position: relative;
     background-repeat: no-repeat;
-    background-image: url(image/fond-moto.jpg);
+    background-image: url(image/fond-moto2.jpg);
 }
+
+#page4{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+#page5{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(image/moto4.jpg);
+    background-size: 100%;
+}
+
+
 
 
 #container {
@@ -345,6 +393,8 @@ height: 40px;
     border-radius: 50px;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    transition-property: color, padding, margin-top, width;
+    transition: 1s ease;
 }
 
 .btn:hover{
@@ -359,3 +409,325 @@ height: 40px;
 .lorem{
     font-family: 'Montserrat', sans-serif;
 }
+
+.photo{
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    border-radius: 50%;
+}
+
+.couleur4{
+
+    background-color: rgba(255, 130, 5, 0.4);
+    margin-right:78vw;
+}
+
+.grise4{
+    margin: 170px;
+    margin-top:5px;
+    background-color: rgba(43, 43, 43, 0.5);
+    position: relative;
+    height: 75vh;
+
+}
+
+
+iframe {
+    margin-top:30px;
+    margin-left:30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    width: 37%;
+    height: 300px;
+}
+
+.logo4{
+    margin-left: 120px;
+}
+
+.alignement4{
+    width: 40%;
+}
+
+.image4{
+float:left;
+
+}
+
+.text4{
+    margin-left:50px;
+}
+
+.gauche4{
+    float:left;
+}
+
+.droit4{
+    float:right;
+}
+
+.contact{
+    height: 80vh;
+    width: 30vw;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.67);
+    top: 0;
+    right: 5vw;
+}
+
+.gauchereseau{
+    float:right;
+    margin-right:0;
+}
+
+.titre4{
+    margin-top:20px;
+    color:#FF8000;
+    font-size:25px;
+    text-align: center;
+}
+
+.sous-titre4{
+    margin-top: 0;
+    margin-left: 15px;
+    color: rgba(255, 128, 0, 0.9);
+}
+
+#text41{
+    color: orange;
+    font-size:15px;
+}
+
+.form4{
+    margin:35px;
+    margin-right: 90px;
+}
+
+#pseudo{
+    height: 35px;
+    border:solid;
+    border-width: 1px;
+    border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+#pseudo2{
+    height: 35px;
+    border:solid;
+    border-width: 1px;
+    border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+#pseudo3{
+    height: 35px;
+    width: 390px;
+    border:solid;
+    border-width: 1px;
+    border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+#pseudo4{
+    height: 90px;
+    width: 390px;
+    border:solid;
+    border-width: 1px;
+    border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+.gaucheform4{
+    float:left;
+}
+
+.droitform4{
+    float:right;
+}
+
+#textera{
+    width: 380px;
+    height: 100px;
+}
+
+#sub4 {
+    margin-top:30px;
+    color:white;
+    background-color: #FF8205;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border:0px;
+    
+}
+.photo1{
+    text-align: center;
+}
+.photo-container{
+    position: relative;
+    height: 40vh;
+}
+
+.photo-container-1{
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    width: 13vw;
+}
+
+.photo-container-2{
+    position: absolute;
+    top: 0;
+    right: 7vw;
+    width: 13vw;
+}
+
+.photo-container-3{
+    position: absolute;
+    bottom: 0;
+    left: 5vw;
+    width: 13vw;
+}
+
+.photo-container-4{
+    position: absolute;
+    bottom: 0;
+    right: 7vw;
+    width: 13vw;
+}
+
+.nom{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2vh;
+    color: #FF8205;
+}
+
+.sms-boutique{
+    opacity: .5;
+    padding-left: 20vw;
+}
+
+.boutique{
+    padding-left: 10vw;
+    padding-top: 10vh;
+    margin: 0;
+    text-align: left;
+}
+
+
+.carousel-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+/*carousel 1*/
+.slideshow-container{
+  position: relative;
+  top: 0;
+  left: 0;
+  border: solid;
+  border-width: 3px;
+  border-color: #FF8000;
+  width: 15%;
+  height: 60%;
+}
+
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  vertical-align: middle;
+  color: #FF8000;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+.prev:hover, .next:hover {
+  color: white;
+  font-size: 40px;
+  transition: color, font-size;
+  transition: .5s ease;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+<<<<<<< HEAD
+=======
+/*carousel 2*/
+<<<<<<< HEAD
+=======
+>>>>>>> cf499615e27fd477d88ee78781344ea5a15fde6a
+>>>>>>> 0261d44ebf4bbfa1296b3e4c712721beaa4679b8
+>>>>>>> e8f221182a3899617477ece92e4b44e71dffce85
