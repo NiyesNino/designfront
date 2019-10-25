@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     </head>
     <body>
         <section class="pop">
@@ -47,6 +46,7 @@
             	</div>
                 <div class="trapeze"></div>
             </div>
+             <a href="#page3"><img src="image/arrow.png" class="arrow" alt="Arrow" ></a>
         </div>
         <div id="page3" data-stellar-background-ratio="0.3">
             <div class="columns is-multiline">
@@ -55,17 +55,27 @@
                     <p class="sms column is-offset-3">Speed Moto Services</p>
                     <h2 class="titre2">Titre</h2>
                     <div class="photo-container column is-12 is-multiline">
-                    	<div class="">
+                    	<div class="photo-container-1">
                     		<img class="photo" src="image/yohann.jpg">
-                    		<p>Yohann TONNERRE</p>
+                    		<p class="nom">Yohann TONNERRE</p>
                     	</div>
-
+                    	<div class="photo-container-2">
+                    		<img class="photo" src="image/leo.jpg">
+                    		<p class="nom">Léo PHILIP</p>
+                    	</div>
+                    	<div class="photo-container-3">
+                    		<img class="photo" src="image/vincent.jpg">
+                    		<p class="nom">Vincent SOUBABERE</p>
+                    	</div>
+                    	<div class="photo-container-4">
+                    		<img class="photo" src="image/nino.jpg">
+                    		<p class="nom">Nino MANSENCAL</p>
+                    	</div>
                     </div>
             	</div>
                 <div class="trapeze2"></div>
             </div>
-<<<<<<< HEAD
-=======
+
             <a href="#page4"><img src="image/arrow.png" class="arrow" alt="Arrow" ></a>
         </div>
 
@@ -170,7 +180,6 @@
 
 				</div>	
 			</section>
->>>>>>> e8f221182a3899617477ece92e4b44e71dffce85
         </div>
 
         <div id="page5" class="columns is-multiline " >
@@ -268,34 +277,13 @@
                 }
                 ?> -->
         </div>
-        <script src="jquery.stellar.js"></script>   
+        <script src="jquery.stellar.js"></script> 
+        <script src="script/carousel.js"></script>  
+        <script src="script/onload-animation.js"></script> 
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script type="text/javascript">
             $.stellar();
         </script>
-        <script type="text/javascript">
-        window.onload = init;
-
-        function init() {
-            const element = document.querySelector("#hidden");
-            element.classList.add("hidden-2");
-            const element2 = document.querySelector(".oui");
-            element2.classList.add("oui-2");
-            setTimeout(suite, 1000);
-        }
-        function suite() {
-            const element4 = document.querySelector(".oui-2");
-            element4.classList.add("oui-3");
-            setTimeout(suite2, 1000);
-        }
-        function suite2() {
-            const element5 = document.querySelector(".pop");
-            element5.classList.add("first-page2")
-            setTimeout(suite3, 1000);
-        }
-        function suite3() {
-            const element6 = document.querySelector(".first-page2");
-            element6.classList.add("first-page3")
-        }
     </script>
     </body>
 </html>
