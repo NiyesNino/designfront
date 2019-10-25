@@ -270,6 +270,9 @@ height: 40px;
     width: 100vw;
     position: relative;
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    background-image: url(image/background.png);
 }
 
 #page5{
@@ -638,20 +641,29 @@ float:left;
   position: relative;
   top: 0;
   left: 0;
-  border: solid;
-  border-width: 3px;
-  border-color: #FF8000;
+  padding-top: 20px;
   width: 15%;
-  height: 60%;
+  height: 70%;
 }
 
+hr{ 
+  
+    border: none;
+    background-color: #FF8000; 
+    border-left: 1px solid;
+    height: 50vh;
+    width: 1px;
+    color: #FF8000;       
+}
 
 
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 25%;
+  margin: 0;
+  padding: 0;
   transform: translateY(-50%);
   width: auto;
   vertical-align: middle;
@@ -664,10 +676,12 @@ float:left;
 }
 
 .next {
-  right: 0;
+  right: -20px;
   border-radius: 3px 0 0 3px;
 }
-
+.prev{
+  left: -20px;
+}
 
 
 .prev:hover, .next:hover {
@@ -730,11 +744,21 @@ float:left;
   .prev, .next,.text {font-size: 11px}
 }
 
-<<<<<<< HEAD
-=======
-/*carousel 2*/
-<<<<<<< HEAD
-=======
->>>>>>> cf499615e27fd477d88ee78781344ea5a15fde6a
->>>>>>> 0261d44ebf4bbfa1296b3e4c712721beaa4679b8
->>>>>>> e8f221182a3899617477ece92e4b44e71dffce85
+.objet,.prix{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.objet{
+  padding-top: 40px;
+  bottom: 30px;
+  width: 100%;
+}
+
+.prix{
+  padding-top: 20px;
+  color: #FF8000;
+  bottom: 0;
+}
