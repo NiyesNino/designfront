@@ -129,6 +129,8 @@ header{
 
 }
 
+
+
 .logo{
   vertical-align: middle;
   margin-top: auto;
@@ -192,6 +194,11 @@ li a:hover{
 }
 
 li a.active{
+  color: #FF8000;
+  transition: color .5s ease;
+}
+
+.constant-active{
   color: #FF8000;
 }
 
