@@ -618,9 +618,13 @@ float:left;
 }
 
 
+.carousel-container{
+  display: flex;
+  justify-content: space-around;
+}
 
 /*carousel 1*/
-.slideshow-container1 {
+.slideshow-container{
   position: relative;
   top: 0;
   left: 0;
@@ -628,42 +632,11 @@ float:left;
   border-width: 3px;
   border-color: #FF8000;
   width: 15%;
+  height: 60%;
 }
 
 
 
-.slideshow-container2 {
-  position: relative;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border: solid;
-  border-width: 3px;
-  border-color: #FF8000;
-  width: 15%;
-}
-
-.dot2 {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.slideshow-container3 {
-  position: relative;
-  margin: auto;
-  top: 0;
-  left: 0;
-  border: solid;
-  border-width: 3px;
-  border-color: #FF8000;
-  width: 25%;
-}
 
 .prev, .next {
   cursor: pointer;
@@ -742,4 +715,11 @@ float:left;
   .prev, .next,.text {font-size: 11px}
 }
 
+<<<<<<< HEAD
+=======
 /*carousel 2*/
+<<<<<<< HEAD
+=======
+>>>>>>> cf499615e27fd477d88ee78781344ea5a15fde6a
+>>>>>>> 0261d44ebf4bbfa1296b3e4c712721beaa4679b8
+>>>>>>> e8f221182a3899617477ece92e4b44e71dffce85
