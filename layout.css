@@ -12,10 +12,15 @@ h1{
     font-size: 50px;
     margin-top: 10vh;
     font-family: 'Merriweather', serif;
-}
-
+  }
 p{
     color: white;
+}
+.lorem-2{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 10vw;
+  margin: 10vh;
 }
 
 .speed{
@@ -375,6 +380,7 @@ height: 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5vh;
     border-radius: 50%;
 }
 
@@ -417,6 +423,7 @@ height: 40px;
 .nom{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 2vh;
     color: #FF8205;
 }
 
