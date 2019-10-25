@@ -7,9 +7,11 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     </head>
     <body>
+    	<div class="left-menu">
+    		<a href=""><span class="point"></span></a>
+    	</div>
         <section class="pop">
             <div id="hidden">
                 <h1 class="oui">Speed Moto Services présente...</h1>
@@ -17,7 +19,7 @@
         </section>
         <header class="columns">
             <ul class="column is-12-desktop" >
-                <li><a href="#news"><img src="image/logo.png" alt="Logo nom blanc" class="logo logo-moto"></a></li>
+                <li><a class="logo-moto-link" href="#news"><img src="image/logo.png" alt="Logo nom blanc" class="logo logo-moto"></a></li>
                 <li><a href="" class="active moto">Speed Moto Services</a></li>
                 <li class="margin-left"><a href="#first-page">Accueil</a></li>
                 <li class="margin-left"><a href="#page2">Occasion</a></li>
@@ -37,37 +39,125 @@
         <div id="page2" data-stellar-background-ratio="0.3">
             <div class="columns is-multiline">
                 <div class="trapeze-correct column is-4">
-            		<h1 class="occasion column is-offset-3">Occasion</h1>
+            		<h1 class="occasion is-offset-3">Occasion</h1>
                     <p class="sms column is-offset-3">Speed Moto Services</p>
-                    <h2 class="column is-offset-3 titre">Titre</h2>
-                    <p class="lorem column is-offset-3"> Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem Lorem</p>
+                    <p class="lorem-2"> Nous vendons divers motos d'occasion. Retrouvez tous nos modèles en cliquant sur le bouton ci-dessous.</p>
                     <div class="column is-offset-3 is-9">
                     	<a class="btn" href="">Voir nos motos d'occasion</a>
                     </div>
             	</div>
                 <div class="trapeze"></div>
             </div>
+            <a href="#page3"><img src="image/arrow.png" class="arrow" alt="Arrow" ></a>
         </div>
         <div id="page3" data-stellar-background-ratio="0.3">
             <div class="columns is-multiline">
                 <div class="trapeze-correct2 column is-5 is-7-offset">
             		<h1 class="occasion column ">À-propos</h1>
                     <p class="sms column is-offset-3">Speed Moto Services</p>
-                    <h2 class="titre2">Titre</h2>
+                    <p class="lorem-2 is-four-fifths"> Nous sommes une équipe composée de quatre personnes motivés et passionnées par la moto.</p>
                     <div class="photo-container column is-12 is-multiline">
-                    	<div class="">
+                    	<div class="photo-container-1">
                     		<img class="photo" src="image/yohann.jpg">
-                    		<p>Yohann TONNERRE</p>
+                    		<p class="nom">Yohann TONNERRE</p>
                     	</div>
-
+                    	<div class="photo-container-2">
+                    		<img class="photo" src="image/leo.jpg">
+                    		<p class="nom">Léo PHILIP</p>
+                    	</div>
+                    	<div class="photo-container-3">
+                    		<img class="photo" src="image/vincent.jpg">
+                    		<p class="nom">Vincent SOUBABERE</p>
+                    	</div>
+                    	<div class="photo-container-4">
+                    		<img class="photo" src="image/nino.jpg">
+                    		<p class="nom">Nino MANSENCAL</p>
+                    	</div>
                     </div>
             	</div>
                 <div class="trapeze2"></div>
             </div>
+            <a href="#page4"><img src="image/arrow.png" class="arrow" alt="Arrow" ></a>
         </div>
 
-        <div id="page4" class="columns is-multiline " >
+        <div id="page4" class="columns is-multiline">
+        	<div class="column is-12">
+	        	<h1 class="boutique">Boutique</h1>
+	       		<p class="sms-boutique">Speed Moto Services</p>
+	       	</div>
+	       	<section class="carousel-container column is-12">
+				<div class="slideshow-container1">
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 8</div>
+					  <img src="image/nino.jpg" alt="Comment obtenir un rendez-vous rapidement? c'est très simple tout est expliqué sur la droite">
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 8</div>
+					  <img src="image/nino.jpg" alt="1. S'inscrire simplement en quelques clics. La première étape est un petit questionnaire qui vous permet de créer vos identifiants">
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">3 / 8</div>
+					  <img src="image/nino.jpg" alt="2. Choisir un accompagnement adapté. La deuxième étape consiste à choisir un professionnel adapté à son besoin. Des exemples types seront proposé pour orienter le choix du professionnel." >
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">4 / 8</div>
+					  <img src="image/nino.jpg" alt="3. Prendre rendez-vous. Pour prendre rendez-vous nous aurons besoin de quelques informations" >
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">5 / 8</div>
+					  <img src="image/nino.jpg" alt="4. Sélectionner un consultant. la dernière ligne droite! Il reste plus qu'à choisir un consultant qui correspond à ses besoins en fonction des profils proposés" >
+					</div>
+				
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				</div>
+
+				<div class="slideshow-container2">
+					<div class="mySlides2 fade">
+					  <div class="numbertext">1 / 8</div>
+					  <img src="image/nino.jpg" alt="Comment obtenir un rendez-vous rapidement? c'est très simple tout est expliqué sur la droite">
+					</div>
+
+					<div class="mySlides2 fade">
+					  <div class="numbertext">2 / 8</div>
+					  <img src="image/nino.jpg" alt="1. S'inscrire simplement en quelques clics. La première étape esqt un petit questionnaire qui vous permet de créer vos identifiants">
+					</div>
+
+					<div class="mySlides2 fade">
+					  <div class="numbertext">3 / 8</div>
+					  <img src="image/nino.jpg" alt="2. Choisir un accompagnement adapté. La deuxième étape consiste à choisir un professionnel adapté à son besoin. Des exemples types seront proposé pour orienter le choix du professionnel." >
+					</div>
+
+					<div class="mySlides2 fade">
+					  <div class="numbertext">4 / 8</div>
+					  <img src="image/nino.jpg" alt="3. Prendre rendez-vous. Pour prendre rendez-vous nous aurons besoin de quelques informations" >
+					</div>
+
+					<div class="mySlides2 fade">
+					  <div class="numbertext">5 / 8</div>
+					  <img src="image/nino.jpg" alt="4. Sélectionner un consultant. la dernière ligne droite! Il reste plus qu'à choisir un consultant qui correspond à ses besoins en fonction des profils proposés" >
+					</div>
+				
+
+					<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+				</div>
+
+				
+			</section>
+        </div>
+
+
+        <!-- <div id="page4" class="columns is-multiline " >
             <div class="column is-12">
+<<<<<<< HEAD
                 <div class ="couleur4">
                     <h1>Contact</h1>
                     <p style="margin-left:130px;">Speed Moto Services</p>
@@ -142,6 +232,21 @@
                     </div>
                 </div>
             </div>
+=======
+                <h1 class="contact column is-11 is-offset-1">Nous contacter</h1>
+                <p class="column is-11 is-offset-1">Si vous avez des questions, n'hésitez pas à nous contacter</p>
+                <p class="column is-11 is-offset-1">Nous vous répondrons dans un délais de 48heures</p>
+                <form class="column is-12" method="post">
+                    <label>Nom</label>
+                    <input type="text" name="nom" required>
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                    <label>Message</label>
+                    <textarea name="message" required></textarea>
+                    <input type="submit">
+                </form>
+            </div> -->
+>>>>>>> cf499615e27fd477d88ee78781344ea5a15fde6a
 
                 <!-- <?php
                 if(isset($_POST['message'])){
@@ -161,34 +266,12 @@
                 }
                 ?> -->
         </div>
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="script/onload-animation.js"></script>
+        <script src="script/carousel.js"></script>
         <script src="jquery.stellar.js"></script>   
         <script type="text/javascript">
             $.stellar();
         </script>
-        <script type="text/javascript">
-        window.onload = init;
-
-        function init() {
-            const element = document.querySelector("#hidden");
-            element.classList.add("hidden-2");
-            const element2 = document.querySelector(".oui");
-            element2.classList.add("oui-2");
-            setTimeout(suite, 1000);
-        }
-        function suite() {
-            const element4 = document.querySelector(".oui-2");
-            element4.classList.add("oui-3");
-            setTimeout(suite2, 1000);
-        }
-        function suite2() {
-            const element5 = document.querySelector(".pop");
-            element5.classList.add("first-page2")
-            setTimeout(suite3, 1000);
-        }
-        function suite3() {
-            const element6 = document.querySelector(".first-page2");
-            element6.classList.add("first-page3")
-        }
-    </script>
     </body>
 </html>
