@@ -14,6 +14,30 @@ h1{
     font-family: 'Merriweather', serif;
 }
 
+.pop-up{
+  
+  display: none;
+  opacity: 0;
+  
+}
+
+.login-visible{
+  display: unset;
+  height: 70vh;
+  width: 30vw;
+  position: fixed;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.login-hidden{
+  display: none;
+  opacity: 0;
+}
+
 .left-menu{
   position: fixed;
   left: 0;
@@ -48,10 +72,7 @@ p{
     text-align: right;
 }
 
-.contact{
-    text-align: left;
-    height: 10vh;
-}
+
 .columns{
     margin: 0;
     padding: 0;
@@ -415,7 +436,43 @@ height: 40px;
     transition: 1s ease;
 }
 
-.btn:hover{
+.btn-2{
+  position: absolute;
+  padding: 20px;
+  bottom: 8vh;
+  left: 50%;
+  transform: translate(-50%);
+  width: 25%;
+}
+
+.btn-3{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+  width: 50%;
+}
+
+.btn-3:hover{
+  color: black;
+    transition: 1s ease;
+    transition-property: color, padding, margin-top, width, font-size;
+    padding: 20px;
+    width: 55%;
+    font-size: 20px;
+}
+.btn-2:hover{
+    color: black;
+    transition: 1s ease;
+    transition-property: color, padding, margin-top, width;
+    padding: 25px;
+    margin-top: 9vh;
+    width: 27%;
+}
+
+
+.btn-1:hover{
     color: black;
     transition: 1s ease;
     transition-property: color, padding, margin-top, width;
@@ -488,12 +545,18 @@ iframe {
 }
 
 .contact{
-    height: 80vh;
+    height: 85vh;
     width: 30vw;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.67);
-    top: 0;
+    top: -7vh;
     right: 5vw;
+}
+
+.contact2{
+    height: 70vh;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, .8);
 }
 
 .gauchereseau{
@@ -503,6 +566,12 @@ iframe {
 
 .titre4{
     margin-top:20px;
+    color:#FF8000;
+    font-size:25px;
+    text-align: center;
+}
+
+.titre5{
     color:#FF8000;
     font-size:25px;
     text-align: center;
@@ -521,6 +590,7 @@ iframe {
 
 .form4{
     margin:35px;
+    position: relative;
     margin-right: 90px;
 }
 
@@ -777,4 +847,37 @@ hr{
   padding-top: 20px;
   color: #FF8000;
   bottom: 0;
+}
+
+
+footer{
+  height: 100vh;
+  width: 100vw;
+  padding-bottom: 25vh;
+}
+h5{
+  color: white;
+  text-align: center;
+}
+
+.float{
+  float: left;
+  width: 50%;
+}
+
+.logo-partenaire{
+  height: 70px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.date-container{
+  border: solid;
+  border-width: 1px;
+  border-color: #FF8000;
+  width: 15vh;
+  height: 15vh;
+  text-align: center;
+  vertical-align: middle;
 }

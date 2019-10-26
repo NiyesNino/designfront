@@ -14,6 +14,42 @@
                 <h1 class="oui">Speed Moto Services présente...</h1>
             </div>
         </section>
+        <section id="login" class="pop-up">
+        	
+        	<div class="contact2">
+        		<img onclick="non()" src="image/croix.png"  style="height: 20px; position: absolute;
+        		right: 0;">
+                <a class="btn btn-3 " onclick="non()" href="#">Valider</a>
+                <div class="titre5">
+                    <h3>Inscription</h3>
+                </div>
+
+                <div class="form4">
+                    <div class="gaucheform4">
+                        <p id="text41">Nom</p>
+                        <input type="text" name="pseudo" id="pseudo" placeholder="Delacourt" />
+                    </div>
+                    <div class="droitform4">
+                        <p id="text41" >Prénom</p>
+                        <input type="text" name="pseudo" id="pseudo2" placeholder="Robert" />  
+                    </div>
+                    <div class="gaucheform4">
+                        <p id="text41" >Email</p>
+                        <input type="email" name="pseudo" id="pseudo3" placeholder="exemple@gmail.com" />  
+                    </div>
+                    <div class="gaucheform4">
+                        <p id="text41" >Mot de passe</p>
+                        <input type="text" name="pseudo" id="pseudo3" placeholder="Mot de passe" />  
+                    </div>
+
+                    <div class="gaucheform4">
+                        <p id="text41" >Confirmation de mot de passe</p>
+                        <input type="text" name="pseudo" id="pseudo3" placeholder="Confirmation de mot de passe" />
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
         <header class="columns">
             <ul class="column is-12-desktop" >
@@ -24,7 +60,7 @@
                 <li class="margin-left"><a class="a-propos-link header-link" href="#page3">À-propos</a></li>
                 <li class="margin-left"><a class="boutique-link header-link" href="#page4">Boutique</a></li>
                 <li class="margin-left"><a class="contact-link header-link" href="#page5">Contact</a></li>
-                <li><a class="user" href="#news"><img  class="logo user-img" src="image/users.png"></a></li>
+                <li><a class="user" onclick="oui()" href="#news"><img  class="logo user-img" src="image/users.png"></a></li>
                 <li><a class="achat" href="#news"><img  class="logo achat-img" src="image/logo-achat.png"></a></li>
             </ul>
         </header>
@@ -42,7 +78,7 @@
                     <h2 class="column is-offset-3 titre hideme">Titre</h2>
                     <p class="lorem column is-offset-3 hideme"> Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem Lorem</p>
                     <div class="column is-offset-3 is-9">
-                    	<a class="btn " href="#page4">Voir nos motos d'occasion</a>
+                    	<a class="btn btn-1 " href="#page4">Voir nos motos d'occasion</a>
                     </div>
             	</div>
                 <div class="trapeze"></div>
@@ -158,6 +194,8 @@
 
 				</div>	
 			</section>
+             <a class="btn btn-2 " href="#page4">Voir plus d'article!</a>
+             <a href="#page5"><img src="image/arrow.png" class="arrow" alt="Arrow" ></a>
         </div>
 
         <div id="page5" class="columns is-multiline " >
@@ -196,6 +234,7 @@
                                             <a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/facebook.png" alt="Facebook"></a>
                                     </div>
                                     <div class="contact">
+                                        <a class="btn btn-3 " href="#page4">Valider</a>
                                         <div class="titre4">
                                             <h3>Contactez-nous si vous avez des questions</h3>
                                         </div>
@@ -230,11 +269,6 @@
                                                 <input type="checkbox" id="scales" name="scales" checked>
                                                Recevoir une copie par mail
                                             </div>
-
-                                            <div class="submit4">
-                                                <input type="submit" value="Envoyer" id="sub4">
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -242,8 +276,48 @@
                         </div>
                     </div>
                 </div>
+                <footer class="columns">
+                	<div class="column is-3">
+                		<h5>A propos de nous</h5>
+                		<div class="photo-container column is-12 is-multiline">
+	                    	<div class="float">
+	                    		<img class="photo hideme" src="image/yohann.jpg">
+	                    		<p class="nom hideme">Yohann TONNERRE</p>
+	                    	</div>
+	                    	<div class="float">
+	                    		<img class="photo hideme" src="image/leo.jpg">
+	                    		<p class="nom hideme">Léo PHILIP</p>
+	                    	</div>
+	                    	<div class="float">
+	                    		<img class="photo hideme" src="image/vincent.jpg">
+	                    		<p class="nom hideme">Vincent SOUBABERE</p>
+	                    	</div>
+	                    	<div class="float">
+	                    		<img class="photo hideme" src="image/nino.jpg">
+	                    		<p class="nom hideme">Nino MANSENCAL</p>
+	                    	</div>
+	                    </div>
+                	</div>
+                	<div class="column is-3">
+                		<h5>Nos partenaires</h5>
+                		<img class="logo-partenaire" src="image/ktm.png">
+                		<img class="logo-partenaire" src="image/ktm.png">
+                		<img class="logo-partenaire" src="image/ktm.png">
+                		<img class="logo-partenaire" src="image/ktm.png">
+                	</div>
+                	<div class="column is-3">
+                		<h5>Dernières mise à jour</h5>
+                		<div class="maj-container">
+                			<div class="date-container">
+                				<p>30</p>
+                				<p>octobre</p>
+                			</div>
+                		</div>
+                	</div>
+                </footer>
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script src="jquery.stellar.js"></script> 
+        <script src="script/pop-up.js"></script> 
         <script src="script/carousel.js"></script>  
         <script src="script/onload-animation.js"></script>
         <script src="script/fade-in.js"></script>
