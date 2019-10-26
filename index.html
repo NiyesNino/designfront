@@ -14,17 +14,18 @@
                 <h1 class="oui">Speed Moto Services présente...</h1>
             </div>
         </section>
+
         <header class="columns">
             <ul class="column is-12-desktop" >
                 <li><a class="logo-moto-link" href="#"><img src="image/logo.png" alt="Logo nom blanc" class="logo logo-moto"></a></li>
                 <li><a href="" class="constant-active moto">Speed Moto Services</a></li>
-                <li class="margin-left"><a class="accueil-link"  href="#first-page">Accueil</a></li>
-                <li class="margin-left"><a class="occasion-link" href="#page2">Occasion</a></li>
-                <li class="margin-left"><a class="a-propos-link" href="#page3">À-propos</a></li>
-                <li class="margin-left"><a class="boutique-link" href="#page4">Boutique</a></li>
-                <li class="margin-left"><a class="contact-link" href="#page5">Contact</a></li>
-                <li><a href="#news"><img  class="logo user" src="image/users.png"></a></li>
-                <li><a href="#news"><img  class="logo achat" src="image/logo-achat.png"></a></li>
+                <li class="margin-left"><a class="accueil-link header-link"  href="#first-page">Accueil</a></li>
+                <li class="margin-left"><a class="occasion-link header-link" href="#page2">Occasion</a></li>
+                <li class="margin-left"><a class="a-propos-link header-link" href="#page3">À-propos</a></li>
+                <li class="margin-left"><a class="boutique-link header-link" href="#page4">Boutique</a></li>
+                <li class="margin-left"><a class="contact-link header-link" href="#page5">Contact</a></li>
+                <li><a class="user" href="#news"><img  class="logo user-img" src="image/users.png"></a></li>
+                <li><a class="achat" href="#news"><img  class="logo achat-img" src="image/logo-achat.png"></a></li>
             </ul>
         </header>
         <section id="first-page"  class="first-page">
@@ -36,12 +37,12 @@
         <div id="page2" data-stellar-background-ratio="0.3">
             <div class="columns is-multiline">
                 <div class="trapeze-correct column is-4">
-            		<h1 class="occasion column is-offset-3">Occasion</h1>
-                    <p class="sms column is-offset-3">Speed Moto Services</p>
-                    <h2 class="column is-offset-3 titre">Titre</h2>
-                    <p class="lorem column is-offset-3"> Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem Lorem</p>
+            		<h1 class="occasion column is-offset-3 hideme">Occasion</h1>
+                    <p class="sms column is-offset-3 hideme">Speed Moto Services</p>
+                    <h2 class="column is-offset-3 titre hideme">Titre</h2>
+                    <p class="lorem column is-offset-3 hideme"> Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor  Lorem ipsum dolorLorem ipsum dolor Lorem ipsum dolor Lorem Lorem</p>
                     <div class="column is-offset-3 is-9">
-                    	<a class="btn" href="">Voir nos motos d'occasion</a>
+                    	<a class="btn " href="#page4">Voir nos motos d'occasion</a>
                     </div>
             	</div>
                 <div class="trapeze"></div>
@@ -51,25 +52,25 @@
         <div id="page3" data-stellar-background-ratio="0.3">
             <div class="columns is-multiline">
                 <div class="trapeze-correct2 column is-5 is-7-offset">
-            		<h1 class="occasion column ">À-propos</h1>
-                    <p class="sms column is-offset-3">Speed Moto Services</p>
-                    <h2 class="titre2">Titre</h2>
+            		<h1 class="occasion column hideme ">À-propos</h1>
+                    <p class="sms column is-offset-3 hideme">Speed Moto Services</p>
+                    <h2 class="titre2 hideme">Titre</h2>
                     <div class="photo-container column is-12 is-multiline">
                     	<div class="photo-container-1">
-                    		<img class="photo" src="image/yohann.jpg">
-                    		<p class="nom">Yohann TONNERRE</p>
+                    		<img class="photo hideme" src="image/yohann.jpg">
+                    		<p class="nom hideme">Yohann TONNERRE</p>
                     	</div>
                     	<div class="photo-container-2">
-                    		<img class="photo" src="image/leo.jpg">
-                    		<p class="nom">Léo PHILIP</p>
+                    		<img class="photo hideme" src="image/leo.jpg">
+                    		<p class="nom hideme">Léo PHILIP</p>
                     	</div>
                     	<div class="photo-container-3">
-                    		<img class="photo" src="image/vincent.jpg">
-                    		<p class="nom">Vincent SOUBABERE</p>
+                    		<img class="photo hideme" src="image/vincent.jpg">
+                    		<p class="nom hideme">Vincent SOUBABERE</p>
                     	</div>
                     	<div class="photo-container-4">
-                    		<img class="photo" src="image/nino.jpg">
-                    		<p class="nom">Nino MANSENCAL</p>
+                    		<img class="photo hideme" src="image/nino.jpg">
+                    		<p class="nom hideme">Nino MANSENCAL</p>
                     	</div>
                     </div>
             	</div>
@@ -258,6 +259,7 @@
         <script src="jquery.stellar.js"></script> 
         <script src="script/carousel.js"></script>  
         <script src="script/onload-animation.js"></script>
+        <script src="script/fade-in.js"></script>
         <script src="script/scroll.js"></script> 
         <script type="text/javascript">
             $.stellar();

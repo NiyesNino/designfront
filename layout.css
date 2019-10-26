@@ -129,6 +129,10 @@ header{
 
 }
 
+.header-link{
+  
+}
+
 
 
 .logo{
@@ -150,7 +154,7 @@ header{
     margin-left: 2vw;
 }
 
-.user,.achat{
+.user-img,.achat-img{
     border-radius: 0;
     height: 4vh; 
 }
@@ -263,6 +267,10 @@ height: 40px;
     position: relative;
     background-repeat: no-repeat;
     background-image: url(image/fond-moto2.jpg);
+}
+
+.hideme{
+  opacity: 0;
 }
 
 #page4{
