@@ -6,14 +6,6 @@ body{
     background-color: black;
     font-family: 'Arya', sans-serif;
 }
-
-.style1{
-  display: unset;
-}
-
-.style2{
-  display: none;
-}
 h1{
     color: #FFF;
     text-align: center;
@@ -21,81 +13,7 @@ h1{
     margin-top: 10vh;
     font-family: 'Merriweather', serif;
 }
-.login-trigger {
-  font-weight: bold;
-  color: #ff8205;
-  background-color: white;
-  padding: 15px 30px;
-  border-radius: 30px;
-  position: absolute; 
-  top: 50%;
-}
 
-h4 {
-  font-weight: bold;
-  color: #fff;
-}
-.close {
-  color: #fff;
-  transform: scale(1.2)
-}
-.modal-content {
-  font-weight: bold;
-  background-color: white;
-  
-}
-
-.modal-dialog{
-  width: 20vw;
-  margin: auto;
-  position: fixed;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-}
-
-.modal{
-  display: none;
-
-}
-.form-control {
-  margin: 1em 0;
-}
-.form-control:hover, .form-control:focus {
-  box-shadow: none;  
-  border-color: #fff;
-}
-.username, .password {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  border-bottom: 2px solid #eee;
-  padding-left: 0;
-  font-weight: normal;
-  background: transparent; 
-}
-.form-control::-webkit-input-placeholder {
-  color: #eee;  
-}
-.form-control:focus::-webkit-input-placeholder {
-  font-weight: bold;
-  color: #fff;
-}
-.login {
-  padding: 6px 20px;
-  border-radius: 20px;
-  background: none;
-  border: 2px solid #FAB87F;
-  color: #FAB87F;
-  font-weight: bold;
-  transition: all .5s;
-  margin-top: 1em;
-}
-.login:hover {
-  background: #FAB87F;
-  color: #fff;
-}
 .left-menu{
   position: fixed;
   left: 0;
@@ -133,7 +51,6 @@ p{
 .contact{
     text-align: left;
     height: 10vh;
-    margin-top:-30px;
 }
 .columns{
     margin: 0;
@@ -478,7 +395,6 @@ height: 40px;
     font-size: 70px;
     padding-top: 8vh;
     font-family: 'Montserrat', sans-serif;
-    color: #FF8205;
 }
 
 .btn{
@@ -523,7 +439,7 @@ height: 40px;
 
 .couleur4{
 
-    background-color: rgba(255, 130, 5, 0.7);
+    background-color: rgba(255, 130, 5, 0.4);
     margin-right:78vw;
 }
 
@@ -609,35 +525,37 @@ float:left;
 }
 
 #pseudo{
-    height: 45px;
-    width: 120%;
+    height: 35px;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
 }
 
 #pseudo2{
-    height: 45px;
-    width:120%;
+    height: 35px;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
 }
 
 #pseudo3{
-    height: 45px;
+    height: 35px;
     width: 390px;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
 }
 
 #pseudo4{
-    height: 130px;
+    height: 90px;
     width: 390px;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
 }
 
 .gaucheform4{
@@ -653,26 +571,16 @@ float:left;
     height: 100px;
 }
 
-textarea{
-    resize:none;
-}
-
-.submit4{
-    margin-left:28%;
-
-}
-
 #sub4 {
     margin-top:30px;
     color:white;
     background-color: #FF8205;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 30px;
     border:0px;
-    font-size: 18px;
     
 }
 .photo1{
@@ -822,6 +730,7 @@ hr{
   transition: background-color 0.6s ease;
 }
 
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -841,8 +750,6 @@ hr{
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-<<<<<<< HEAD
-=======
 }
 
 .objet,.prix{
@@ -862,5 +769,4 @@ hr{
   padding-top: 20px;
   color: #FF8000;
   bottom: 0;
->>>>>>> 3a85d9907c074fd72185fd6a6c4ae22ffc963328
 }
