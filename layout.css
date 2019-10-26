@@ -439,7 +439,7 @@ height: 40px;
 
 .couleur4{
 
-    background-color: rgba(255, 130, 5, 0.4);
+    background-color: rgba(255, 130, 5, 0.7);
     margin-right:78vw;
 }
 
@@ -471,7 +471,7 @@ iframe {
 }
 
 .image4{
-float:left;
+  float:left;
 
 }
 
@@ -525,37 +525,35 @@ float:left;
 }
 
 #pseudo{
-    height: 35px;
+    height: 45px;
+    width: 120%;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
-    color:rgba(0, 0, 0, 0.4);
 }
 
 #pseudo2{
-    height: 35px;
+    height: 45px;
+    width:120%;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
-    color:rgba(0, 0, 0, 0.4);
 }
 
 #pseudo3{
-    height: 35px;
+    height: 45px;
     width: 390px;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
-    color:rgba(0, 0, 0, 0.4);
 }
 
 #pseudo4{
-    height: 90px;
+    height: 130px;
     width: 390px;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
-    color:rgba(0, 0, 0, 0.4);
 }
 
 .gaucheform4{
@@ -571,16 +569,26 @@ float:left;
     height: 100px;
 }
 
+textarea{
+    resize:none;
+}
+
+.submit4{
+    margin-left:28%;
+
+}
+
 #sub4 {
     margin-top:30px;
     color:white;
     background-color: #FF8205;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 30px;
     border:0px;
+    font-size: 18px;
     
 }
 .photo1{
