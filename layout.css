@@ -6,14 +6,6 @@ body{
     background-color: black;
     font-family: 'Arya', sans-serif;
 }
-
-.style1{
-  display: unset;
-}
-
-.style2{
-  display: none;
-}
 h1{
     color: #FFF;
     text-align: center;
@@ -21,81 +13,7 @@ h1{
     margin-top: 10vh;
     font-family: 'Merriweather', serif;
 }
-.login-trigger {
-  font-weight: bold;
-  color: #ff8205;
-  background-color: white;
-  padding: 15px 30px;
-  border-radius: 30px;
-  position: absolute; 
-  top: 50%;
-}
 
-h4 {
-  font-weight: bold;
-  color: #fff;
-}
-.close {
-  color: #fff;
-  transform: scale(1.2)
-}
-.modal-content {
-  font-weight: bold;
-  background-color: white;
-  
-}
-
-.modal-dialog{
-  width: 20vw;
-  margin: auto;
-  position: fixed;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-}
-
-.modal{
-  display: none;
-
-}
-.form-control {
-  margin: 1em 0;
-}
-.form-control:hover, .form-control:focus {
-  box-shadow: none;  
-  border-color: #fff;
-}
-.username, .password {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  border-bottom: 2px solid #eee;
-  padding-left: 0;
-  font-weight: normal;
-  background: transparent; 
-}
-.form-control::-webkit-input-placeholder {
-  color: #eee;  
-}
-.form-control:focus::-webkit-input-placeholder {
-  font-weight: bold;
-  color: #fff;
-}
-.login {
-  padding: 6px 20px;
-  border-radius: 20px;
-  background: none;
-  border: 2px solid #FAB87F;
-  color: #FAB87F;
-  font-weight: bold;
-  transition: all .5s;
-  margin-top: 1em;
-}
-.login:hover {
-  background: #FAB87F;
-  color: #fff;
-}
 .left-menu{
   position: fixed;
   left: 0;
@@ -212,8 +130,6 @@ header{
 
 }
 
-
-
 .logo{
   vertical-align: middle;
   margin-top: auto;
@@ -277,11 +193,6 @@ li a:hover{
 }
 
 li a.active{
-  color: #FF8000;
-  transition: color .5s ease;
-}
-
-.constant-active{
   color: #FF8000;
 }
 
@@ -353,9 +264,6 @@ height: 40px;
     width: 100vw;
     position: relative;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: black;
-    background-image: url(image/background.png);
 }
 
 #page5{
@@ -470,7 +378,6 @@ height: 40px;
     font-size: 70px;
     padding-top: 8vh;
     font-family: 'Montserrat', sans-serif;
-    color: #FF8205;
 }
 
 .btn{
@@ -733,54 +640,41 @@ textarea{
   position: relative;
   top: 0;
   left: 0;
-  padding-top: 20px;
+  border: solid;
+  border-width: 3px;
+  border-color: #FF8000;
   width: 15%;
-  height: 70%;
+  height: 60%;
 }
 
-hr{ 
-  
-    border: none;
-    background-color: #FF8000; 
-    border-left: 1px solid;
-    height: 50vh;
-    width: 1px;
-    color: #FF8000;       
-}
 
 
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 25%;
-  margin: 0;
-  padding: 0;
+  top: 50%;
   transform: translateY(-50%);
   width: auto;
   vertical-align: middle;
   color: #FF8000;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
 .next {
-  right: -20px;
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
-.prev{
-  left: -20px;
-}
+
 
 
 .prev:hover, .next:hover {
   color: white;
-  font-size: 40px;
-  transition: color, font-size;
-  transition: .5s ease;
+  transition: color .5s linear;
 }
 
 
@@ -833,26 +727,4 @@ hr{
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-<<<<<<< HEAD
-=======
-}
-
-.objet,.prix{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
-
-.objet{
-  padding-top: 40px;
-  bottom: 30px;
-  width: 100%;
-}
-
-.prix{
-  padding-top: 20px;
-  color: #FF8000;
-  bottom: 0;
->>>>>>> 3a85d9907c074fd72185fd6a6c4ae22ffc963328
 }
