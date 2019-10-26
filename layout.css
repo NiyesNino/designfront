@@ -51,7 +51,6 @@ p{
 .contact{
     text-align: left;
     height: 10vh;
-    margin-top:-30px;
 }
 .columns{
     margin: 0;
@@ -130,6 +129,12 @@ header{
 
 }
 
+.header-link{
+  
+}
+
+
+
 .logo{
   vertical-align: middle;
   margin-top: auto;
@@ -149,7 +154,7 @@ header{
     margin-left: 2vw;
 }
 
-.user,.achat{
+.user-img,.achat-img{
     border-radius: 0;
     height: 4vh; 
 }
@@ -193,6 +198,11 @@ li a:hover{
 }
 
 li a.active{
+  color: #FF8000;
+  transition: color .5s ease;
+}
+
+.constant-active{
   color: #FF8000;
 }
 
@@ -259,11 +269,18 @@ height: 40px;
     background-image: url(image/fond-moto2.jpg);
 }
 
+.hideme{
+  opacity: 0;
+}
+
 #page4{
     height: 100vh;
     width: 100vw;
     position: relative;
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    background-image: url(image/background.png);
 }
 
 #page5{
@@ -422,7 +439,7 @@ height: 40px;
 
 .couleur4{
 
-    background-color: rgba(255, 130, 5, 0.7);
+    background-color: rgba(255, 130, 5, 0.4);
     margin-right:78vw;
 }
 
@@ -508,35 +525,37 @@ float:left;
 }
 
 #pseudo{
-    height: 45px;
-    width: 120%;
+    height: 35px;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
 }
 
 #pseudo2{
-    height: 45px;
-    width:120%;
+    height: 35px;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
 }
 
 #pseudo3{
-    height: 45px;
+    height: 35px;
     width: 390px;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
 }
 
 #pseudo4{
-    height: 130px;
+    height: 90px;
     width: 390px;
     border:solid;
     border-width: 1px;
     border-color:#FF8205;
+    color:rgba(0, 0, 0, 0.4);
 }
 
 .gaucheform4{
@@ -552,26 +571,16 @@ float:left;
     height: 100px;
 }
 
-textarea{
-    resize:none;
-}
-
-.submit4{
-    margin-left:28%;
-
-}
-
 #sub4 {
     margin-top:30px;
     color:white;
     background-color: #FF8205;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 30px;
     border:0px;
-    font-size: 18px;
     
 }
 .photo1{
@@ -640,41 +649,54 @@ textarea{
   position: relative;
   top: 0;
   left: 0;
-  border: solid;
-  border-width: 3px;
-  border-color: #FF8000;
+  padding-top: 20px;
   width: 15%;
-  height: 60%;
+  height: 70%;
 }
 
+hr{ 
+  
+    border: none;
+    background-color: #FF8000; 
+    border-left: 1px solid;
+    height: 50vh;
+    width: 1px;
+    color: #FF8000;       
+}
 
 
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 25%;
+  margin: 0;
+  padding: 0;
   transform: translateY(-50%);
   width: auto;
   vertical-align: middle;
   color: #FF8000;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
 .next {
-  right: 0;
+  right: -20px;
   border-radius: 3px 0 0 3px;
 }
-
+.prev{
+  left: -20px;
+}
 
 
 .prev:hover, .next:hover {
   color: white;
-  transition: color .5s linear;
+  font-size: 40px;
+  transition: color, font-size;
+  transition: .5s ease;
 }
 
 
@@ -708,6 +730,7 @@ textarea{
   transition: background-color 0.6s ease;
 }
 
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -727,4 +750,23 @@ textarea{
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+.objet,.prix{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.objet{
+  padding-top: 40px;
+  bottom: 30px;
+  width: 100%;
+}
+
+.prix{
+  padding-top: 20px;
+  color: #FF8000;
+  bottom: 0;
 }
