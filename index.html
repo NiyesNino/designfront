@@ -17,34 +17,31 @@
         <section id="login" class="pop-up">
         	
         	<div class="contact2">
+                <a class="btn btn-3 " onclick="non()" href="#">Valider</a>
         		<img onclick="non()" src="image/croix.png"  style="height: 20px; position: absolute;
         		right: 0;">
-                <a class="btn btn-3 " onclick="non()" href="#">Valider</a>
                 <div class="titre5">
-                    <h3>Inscription</h3>
+                    <h3 class="connexion-title">Connexion</h3>
                 </div>
 
                 <div class="form4">
                     <div class="gaucheform4">
-                        <p id="text41">Nom</p>
-                        <input type="text" name="pseudo" id="pseudo" placeholder="Delacourt" />
+                        <p class="id" id="text41">Identifiant</p>
+                        <div class="flex">
+	                        <img src="image/users.png" style="height: 40px; width: 40px;">
+	                        <input type="text" name="pseudo" class="pseudo" placeholder="Delacourt" />
+	                    </div>
                     </div>
-                    <div class="droitform4">
-                        <p id="text41" >Prénom</p>
-                        <input type="text" name="pseudo" id="pseudo2" placeholder="Robert" />  
-                    </div>
-                    <div class="gaucheform4">
-                        <p id="text41" >Email</p>
-                        <input type="email" name="pseudo" id="pseudo3" placeholder="exemple@gmail.com" />  
-                    </div>
-                    <div class="gaucheform4">
-                        <p id="text41" >Mot de passe</p>
-                        <input type="text" name="pseudo" id="pseudo3" placeholder="Mot de passe" />  
-                    </div>
-
-                    <div class="gaucheform4">
-                        <p id="text41" >Confirmation de mot de passe</p>
-                        <input type="text" name="pseudo" id="pseudo3" placeholder="Confirmation de mot de passe" />
+                    <div class="gaucheform4 mdp">
+                        <p class="id" id="text41" >Mot de passe</p>
+                        <div class="flex">
+	                    	<img src="image/pasword.png" style="height: 40px; width: 40px;">
+	                        <input type="email" name="pseudo" class="pseudo" placeholder="exemple@gmail.com" />  
+	                    </div>
+	                    <div class="flex remember">
+	                    	<input type="checkbox" name="se souvenir de moi">
+	                    	<p>Se souvenir de moi <a style="margin-left: 1vw;" href="">Mot de passe oublié?</a></p>
+	                    </div>
                     </div>
                 </div>
             </div>
@@ -60,18 +57,18 @@
                 <li class="margin-left"><a class="a-propos-link header-link" href="#page3">À-propos</a></li>
                 <li class="margin-left"><a class="boutique-link header-link" href="#page4">Boutique</a></li>
                 <li class="margin-left"><a class="contact-link header-link" href="#page5">Contact</a></li>
-                <li><a class="user" onclick="oui()" href="#news"><img  class="logo user-img" src="image/users.png"></a></li>
-                <li><a class="achat" href="#news"><img  class="logo achat-img" src="image/logo-achat.png"></a></li>
+                <li class="achat"><a  href="#news"><img  class="logo achat-img" src="image/logo-achat.png"></a></li>
+                <li class="user"><a  onclick="oui()" href="#news"><img  class="logo user-img" src="image/users.png"></a></li>
             </ul>
         </header>
         <section id="first-page"  class="first-page">
             <video preload="preload"    autoplay="autoplay" muted="muted" loop="loop">
-                <source src="image/bk.mp4" type="video/mp4">
+                <source src="image/background.mp4" type="video/mp4">
             </video>
                 <a href="#page2"><img src="image/arrow.png" class="arrow" alt="Arrow" ></a>
         </section>
         <div id="page2" data-stellar-background-ratio="0.3">
-            <div class="columns is-multiline">
+            <div class="columns is-multiline is-mobile">
                 <div class="trapeze-correct column is-4">
             		<h1 class="occasion column is-offset-3 hideme">Occasion</h1>
                     <p class="sms column is-offset-3 hideme">Speed Moto Services</p>
@@ -86,12 +83,12 @@
              <a href="#page3"><img src="image/arrow.png" class="arrow" alt="Arrow" ></a>
         </div>
         <div id="page3" data-stellar-background-ratio="0.3">
-            <div class="columns is-multiline">
+            <div class="columns is-multiline is-mobile">
                 <div class="trapeze-correct2 column is-5 is-7-offset">
             		<h1 class="occasion column hideme ">À-propos</h1>
                     <p class="sms column is-offset-3 hideme">Speed Moto Services</p>
                     <h2 class="titre2 hideme">Titre</h2>
-                    <div class="photo-container column is-12 is-multiline">
+                    <div class="photo-container column is-12 ">
                     	<div class="photo-container-1">
                     		<img class="photo hideme" src="image/yohann.jpg">
                     		<p class="nom hideme">Yohann TONNERRE</p>
@@ -116,9 +113,9 @@
             <a href="#page4"><img src="image/arrow.png" class="arrow" alt="Arrow" ></a>
         </div>
 
-        <div id="page4" data-stellar-background-ratio="0.3" class="columns is-multiline">
+        <div id="page4" data-stellar-background-ratio="0.3" class="columns is-multiline is-mobile">
         	<div class="column is-12">
-	        	<h1 class="boutique">Boutique</h1>
+	        	<h1 class="boutique ">Boutique</h1>
 	       		<p class="sms-boutique">Speed Moto Services</p>
 	       	</div>
 	       	<section class="carousel-container column is-12">
@@ -178,16 +175,22 @@
 					<div class="mySlides fade">
 					  <div class="numbertext">1 / 3</div>
 					  <img src="image/masque.png" alt="Comment obtenir un rendez-vous rapidement? c'est très simple tout est expliqué sur la droite">
+					  <p class="objet">Magnifique lunette</p>
+					  <p class="prix">20€</p>
 					</div>
 
 					<div class="mySlides fade">
 					  <div class="numbertext">2 / 3</div>
 					  <img src="image/masque.png" alt="1. S'inscrire simplement en quelques clics. La première étape est un petit questionnaire qui vous permet de créer vos identifiants">
+					  <p class="objet">Magnifique lunette</p>
+					  <p class="prix">20€</p>
 					</div>
 
 					<div class="mySlides fade">
 					  <div class="numbertext">3 / 3</div>
 					  <img src="image/masque.png" alt="2. Choisir un accompagnement adapté. La deuxième étape consiste à choisir un professionnel adapté à son besoin. Des exemples types seront proposé pour orienter le choix du professionnel." >
+					  <p class="objet">Magnifique lunette</p>
+					  <p class="prix">20€</p>
 					</div>
 					<a class="prev">&#10094;</a>
 					<a class="next">&#10095;</a>
@@ -212,21 +215,21 @@
                                         <a href="#"><img style="width: 20px; height: 30px;" src="image/adresse.png" alt="adresse"></a>
                                     </div>
                                     <div class="text4">
-                                        <p style="color:white;"> 6 Rue Jacques Yves-Cousteau</p>
+                                        <p class="info"> 6 Rue Jacques Yves-Cousteau</p>
                                     </div>
                                     <br>
                                     <div class="image4">
                                         <a href="#"><img style="width: 30px; height: 20px;" src="image/mail-logo.png" alt="mail"></a>
                                     </div>
                                     <div class="text4">
-                                        <p style="color:white;">speedmotoservice@gmail.com </p>
+                                        <p class="info">speedmotoservice@gmail.com </p>
                                     </div>
                                     <br>
                                     <div class="image4">
                                         <a href="#"><img style="width: 25px; height: 30px;" src="image/tel-logo.png" alt="tel"></a>
                                     </div>
                                     <div class="text4">
-                                        <p style="color:white;">05 54 85 25 21 </p>
+                                        <p class="info">05 54 85 25 21 </p>
                                     </div>
                                     <div class="gauchereseau">
                                             <a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/Instagram.png" alt="Instagram"></a>
@@ -307,12 +310,46 @@
                 	</div>
                 	<div class="column is-3">
                 		<h5>Dernières mise à jour</h5>
-                		<div class="maj-container">
+                		<div class="maj-container1">
                 			<div class="date-container">
                 				<p>30</p>
                 				<p>octobre</p>
                 			</div>
+                			<div class="text-container">
+                				<p>Finition du site internet</p>
+                			</div>
                 		</div>
+                		<div class="maj-container1">
+                			<div class="date-container">
+                				<p>30</p>
+                				<p>octobre</p>
+                			</div>
+                			<div class="text-container">
+                				<p>Finition du site internet</p>
+                			</div>
+                		</div>
+                		<div class="maj-container1">
+                			<div class="date-container">
+                				<p>30</p>
+                				<p>octobre</p>
+                			</div>
+                			<div class="text-container">
+                				<p>Finition du site internet</p>
+                			</div>
+                		</div>
+                	</div>
+                	<div class="column is-3">
+                		<h5>Connecte-toi avec nous</h5>
+                		<div class="">
+	                		<input class="votre-adresse-mail" type="text" placeholder="Votre adresse mail" name="">
+	                		<input class="votre-adresse-mail-check" type="checkbox" name="">
+	                	</div>
+
+                		<div>
+	                		<a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/Instagram.png" alt="Instagram"></a>
+	                        <a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/Twitter.png" alt="Twitter"></a>
+	                        <a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/facebook.png" alt="Facebook"></a>
+	                    </div>
                 	</div>
                 </footer>
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
