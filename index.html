@@ -17,7 +17,7 @@
         <section id="login" class="pop-up">
         	
         	<div class="contact2">
-                <a class="btn btn-3 " onclick="non()" href="#">Valider</a>
+                <a class="btn btn-3 " onclick="non(), getmr()" href="#">Valider</a>
         		<img onclick="non()" src="image/croix.png"  style="height: 20px; position: absolute;
         		right: 0;">
                 <div class="titre5">
@@ -29,14 +29,14 @@
                         <p class="id" id="text41">Identifiant</p>
                         <div class="flex">
 	                        <img src="image/users.png" style="height: 40px; width: 40px;">
-	                        <input type="text" name="pseudo" class="pseudo" placeholder="Delacourt" />
+	                        <input id="mr" type="text" name="pseudo" class="pseudo" placeholder="Delacourt" />
 	                    </div>
                     </div>
                     <div class="gaucheform4 mdp">
                         <p class="id" id="text41" >Mot de passe</p>
                         <div class="flex">
 	                    	<img src="image/pasword.png" style="height: 40px; width: 40px;">
-	                        <input type="email" name="pseudo" class="pseudo" placeholder="exemple@gmail.com" />  
+	                        <input type="password" name="pseudo" class="pseudo" placeholder="motdepasse" />  
 	                    </div>
 	                    <div class="flex remember">
 	                    	<input type="checkbox" name="se souvenir de moi">
@@ -115,8 +115,8 @@
 
         <div id="page4" data-stellar-background-ratio="0.3" class="columns is-multiline is-mobile">
         	<div class="column is-12">
-	        	<h1 class="boutique ">Boutique</h1>
-	       		<p class="sms-boutique">Speed Moto Services</p>
+	        	<h1 class="boutique hideme">Boutique</h1>
+	       		<p class="sms-boutique hideme">Speed Moto Services</p>
 	       	</div>
 	       	<section class="carousel-container column is-12">
 				<div class="slideshow-container">
@@ -204,72 +204,72 @@
         <div id="page5" class="columns is-multiline " >
                     <div class="column is-12">
                         <div class ="couleur4">
-                            <h1>Contact</h1>
-                            <p style="margin-left:130px;">Speed Moto Services</p>
+                            <h1 class="hideme">Contact</h1>
+                            <p class="hideme" style="margin-left:130px;">Speed Moto Services</p>
                         </div>
                         <div class="grise4">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.8055286262947!2d-0.5800428845026162!3d44.78476987909882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527398a91c8a5%3A0xf584491228f2d71d!2s6%20Rue%20Jacques-Yves%20Cousteau%2C%2033140%20Villenave-d&#39;Ornon!5e0!3m2!1sfr!2sfr!4v1571927496681!5m2!1sfr!2sfr" frameborder="0" style="border:0;" ></iframe>
+                            <iframe class="hideme" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.8055286262947!2d-0.5800428845026162!3d44.78476987909882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527398a91c8a5%3A0xf584491228f2d71d!2s6%20Rue%20Jacques-Yves%20Cousteau%2C%2033140%20Villenave-d&#39;Ornon!5e0!3m2!1sfr!2sfr!4v1571927496681!5m2!1sfr!2sfr" frameborder="0" style="border:0;" ></iframe>
                             <div class="logo4">
                                 <div class="alignement4">
                                     <div class="image4">
-                                        <a href="#"><img style="width: 20px; height: 30px;" src="image/adresse.png" alt="adresse"></a>
+                                        <a href="#"><img class="hideme" style="width: 20px; height: 30px;" src="image/adresse.png" alt="adresse"></a>
                                     </div>
                                     <div class="text4">
-                                        <p class="info"> 6 Rue Jacques Yves-Cousteau</p>
+                                        <p class="info hideme"> 6 Rue Jacques Yves-Cousteau</p>
                                     </div>
                                     <br>
                                     <div class="image4">
-                                        <a href="#"><img style="width: 30px; height: 20px;" src="image/mail-logo.png" alt="mail"></a>
+                                        <a href="#"><img class="hideme" style="width: 30px; height: 20px;" src="image/mail-logo.png" alt="mail"></a>
                                     </div>
                                     <div class="text4">
-                                        <p class="info">speedmotoservice@gmail.com </p>
+                                        <p class="info hideme">speedmotoservice@gmail.com </p>
                                     </div>
                                     <br>
                                     <div class="image4">
-                                        <a href="#"><img style="width: 25px; height: 30px;" src="image/tel-logo.png" alt="tel"></a>
+                                        <a href="#"><img class="hideme" style="width: 25px; height: 30px;" src="image/tel-logo.png" alt="tel"></a>
                                     </div>
                                     <div class="text4">
-                                        <p class="info">05 54 85 25 21 </p>
+                                        <p class="info hideme">05 54 85 25 21 </p>
                                     </div>
                                     <div class="gauchereseau">
-                                            <a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/Instagram.png" alt="Instagram"></a>
-                                            <a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/Twitter.png" alt="Twitter"></a>
-                                            <a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/facebook.png" alt="Facebook"></a>
+                                            <a target="_blank" href="https://www.instagram.com/"><img class="hideme" style="width: 32px; height: 32px; margin-left:5px;" src="image/Instagram.png" alt="Instagram"></a>
+                                            <a target="_blank" href="https://www.twitter.com/"><img class="hideme" style="width: 32px; height: 32px; margin-left:5px;" src="image/Twitter.png" alt="Twitter"></a>
+                                            <a target="_blank" href="https://www.facebook.com/"><img class="hideme" style="width: 32px; height: 32px; margin-left:5px;" src="image/facebook.png" alt="Facebook"></a>
                                     </div>
-                                    <div class="contact">
-                                        <a class="btn btn-3 " href="#page4">Valider</a>
+                                    <div class="contact hideme">
+                                        <a class="btn btn-3 hideme" href="#">Valider</a>
                                         <div class="titre4">
-                                            <h3>Contactez-nous si vous avez des questions</h3>
+                                            <h3 class="hideme">Contactez-nous si vous avez des questions</h3>
                                         </div>
                                         <div class="sous-titre4">
-                                            <h4>Nous vous répondrons sous 24 h</h4>
+                                            <h4 class="hideme">Nous vous répondrons sous 24 h</h4>
                                         </div>
 
                                         <div class="form4">
                                             <div class="gaucheform4">
-                                                <p id="text41">Nom</p>
+                                                <p class="hideme" id="text41">Nom</p>
                                                 <input type="text" name="pseudo" id="pseudo" placeholder="Delacourt" />
                                             </div>
                                             <div class="droitform4">
-                                                <p id="text41" >Prénom</p>
+                                                <p class="hideme" id="text41" >Prénom</p>
                                                 <input type="text" name="pseudo" id="pseudo2" placeholder="Robert" />  
                                             </div>
                                             <div class="gaucheform4">
-                                                <p id="text41" >Email</p>
+                                                <p class="hideme" id="text41" >Email</p>
                                                 <input type="email" name="pseudo" id="pseudo3" placeholder="exemple@gmail.com" />  
                                             </div>
                                             <div class="gaucheform4">
-                                                <p id="text41" >Sujet de la demande</p>
+                                                <p class="hideme" id="text41" >Sujet de la demande</p>
                                                 <input type="text" name="pseudo" id="pseudo3" placeholder="Moto Aprilia RS" />  
                                             </div>
 
                                             <div class="gaucheform4">
-                                                <p id="text41" >Message</p>
+                                                <p class="hideme" id="text41" >Message</p>
                                                 <textarea rows="4" cols="50" placeholder="Mon message..." id="pseudo4"></textarea>
                                             </div>
                                             
                                             <div class="gaucheform4">
-                                                <input type="checkbox" id="scales" name="scales" checked>
+                                                <input type="checkbox" id="scales" class="hideme" name="scales" checked>
                                                Recevoir une copie par mail
                                             </div>
                                         </div>
@@ -279,76 +279,76 @@
                         </div>
                     </div>
                 </div>
-                <footer class="columns">
+                <footer class="columns is-mobile">
                 	<div class="column is-3">
-                		<h5>A propos de nous</h5>
+                		<h5 class="hideme">A propos de nous</h5>
                 		<div class="photo-container column is-12 is-multiline">
 	                    	<div class="float">
-	                    		<img class="photo hideme" src="image/yohann.jpg">
+	                    		<img class="photo hideme" src="image/yohann.jpg" alt="Yohann Tonnerre">
 	                    		<p class="nom hideme">Yohann TONNERRE</p>
 	                    	</div>
 	                    	<div class="float">
-	                    		<img class="photo hideme" src="image/leo.jpg">
+	                    		<img class="photo hideme" src="image/leo.jpg" alt="Leo Philip">
 	                    		<p class="nom hideme">Léo PHILIP</p>
 	                    	</div>
 	                    	<div class="float">
-	                    		<img class="photo hideme" src="image/vincent.jpg">
+	                    		<img class="photo hideme" src="image/vincent.jpg" alt="Vincent Soubabere">
 	                    		<p class="nom hideme">Vincent SOUBABERE</p>
 	                    	</div>
 	                    	<div class="float">
-	                    		<img class="photo hideme" src="image/nino.jpg">
+	                    		<img class="photo hideme" src="image/nino.jpg" alt="Nino Mansencal">
 	                    		<p class="nom hideme">Nino MANSENCAL</p>
 	                    	</div>
 	                    </div>
                 	</div>
                 	<div class="column is-3">
-                		<h5>Nos partenaires</h5>
-                		<img class="logo-partenaire" src="image/ktm.png">
-                		<img class="logo-partenaire" src="image/ktm.png">
-                		<img class="logo-partenaire" src="image/ktm.png">
-                		<img class="logo-partenaire" src="image/ktm.png">
+                		<h5 class="hideme">Nos partenaires</h5>
+                		<img class="logo-partenaire hideme" src="image/yamaha.png" alt="logo yamaha">
+                		<img class="logo-partenaire hideme" src="image/ktm.png" alt="logo ktm">
+                		<img class="logo-partenaire hideme" src="image/derbi.png" alt="logo derbi">
+                		<img class="logo-partenaire hideme" src="image/harley.png" alt="logo harley">
                 	</div>
                 	<div class="column is-3">
-                		<h5>Dernières mise à jour</h5>
+                		<h5 class="hideme">Dernières mise à jour</h5>
                 		<div class="maj-container1">
-                			<div class="date-container">
-                				<p>30</p>
-                				<p>octobre</p>
+                			<div class="date-container hideme">
+                				<p class="hideme">30</p>
+                				<p class="hideme">octobre</p>
                 			</div>
                 			<div class="text-container">
-                				<p>Finition du site internet</p>
+                				<p class="hideme">Finition du site internet</p>
                 			</div>
                 		</div>
                 		<div class="maj-container1">
-                			<div class="date-container">
-                				<p>30</p>
-                				<p>octobre</p>
+                			<div class="date-container hideme">
+                				<p class="hideme">29</p>
+                				<p class="hideme">octobre</p>
                 			</div>
-                			<div class="text-container">
-                				<p>Finition du site internet</p>
+                			<div class="text-container hideme">
+                				<p class="hideme">Modification du code pour le responsive</p>
                 			</div>
                 		</div>
                 		<div class="maj-container1">
-                			<div class="date-container">
-                				<p>30</p>
-                				<p>octobre</p>
+                			<div class="date-container hideme">
+                				<p class="hideme">28</p>
+                				<p class="hideme">octobre</p>
                 			</div>
                 			<div class="text-container">
-                				<p>Finition du site internet</p>
+                				<p class="hideme">Ajout de la partie Inscription & connexion</p>
                 			</div>
                 		</div>
                 	</div>
                 	<div class="column is-3">
-                		<h5>Connecte-toi avec nous</h5>
-                		<div class="">
-	                		<input class="votre-adresse-mail" type="text" placeholder="Votre adresse mail" name="">
-	                		<input class="votre-adresse-mail-check" type="checkbox" name="">
+                		<h5 class="hideme">Connecte-toi avec nous</h5>
+                		<div class="input-container">
+	                		<input class="votre-adresse-mail hideme" type="text" placeholder="Votre adresse mail" name="">
+	                		<input class="votre-adresse-mail-check hideme" type="checkbox" name="" checked="checked" >
 	                	</div>
 
-                		<div>
-	                		<a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/Instagram.png" alt="Instagram"></a>
-	                        <a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/Twitter.png" alt="Twitter"></a>
-	                        <a href="#"><img style="width: 32px; height: 32px; margin-left:5px;" src="image/facebook.png" alt="Facebook"></a>
+                		<div class="logo-container">
+	                		<a target="_blank" href="https://www.instagram.com/"><img class="logo-footer hideme" src="image/Instagram.png" alt="Instagram"></a>
+	                        <a target="_blank" href="https://www.twitter.com/"><img class="logo-footer hideme" src="image/Twitter.png" alt="Twitter"></a>
+	                        <a target="_blank" href="https://www.facebook.com/"><img class="logo-footer hideme" src="image/facebook.png" alt="Facebook"></a>
 	                    </div>
                 	</div>
                 </footer>
@@ -359,6 +359,7 @@
         <script src="script/onload-animation.js"></script>
         <script src="script/fade-in.js"></script>
         <script src="script/scroll.js"></script> 
+        <script src="script/connexion.js"></script>
         <script type="text/javascript">
             $.stellar();
         </script>

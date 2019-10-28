@@ -262,8 +262,8 @@ a img:hover{
   position : absolute;
   bottom: 20px;
   left:49%;
-  width: 40px;
-  height: 40px;
+  width: 3vw;
+  height: 3vw;
   animation: up-down 1.5s infinite ease;
   transition: transform .5s ease;
 }
@@ -418,7 +418,6 @@ a img:hover{
 .sms{
     padding-left: 11vw;
     font-size: 1vw;
-    opacity: .5;
 }
 
 .titre{
@@ -442,7 +441,7 @@ a img:hover{
 
 .occasion{
     font-size: 5vw;
-    padding-top: 8vh;
+    padding-top: 9vh;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -937,14 +936,13 @@ hr{
 
 
 footer{
-  height: 100vh;
-  width: 100vw;
   padding-bottom: 25vh;
+  width: 100vw;
 }
 h5{
   color: white;
   text-align: center;
-  font-size: 30px;
+  font-size: 2vw;
   margin-bottom: 5vh;
 }
 
@@ -954,7 +952,7 @@ h5{
 }
 
 .logo-partenaire{
-  height: 70px;
+  width: 10vw;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -989,11 +987,33 @@ h5{
 }
 
 
+.input-container{
+  position: relative;
+}
+
 .votre-adresse-mail{
   width: 15vw;
+  height: 5vh;
+  margin-left: 4vw;
+  font-size: 1.4vw;
 }
 
 .votre-adresse-mail-check{
-  transform: scale(1.5);
+  transform: translateY(-50%) scale(3.4) ;
+  position: absolute;
+  top: 57%;
+  right: 25%;
+
 }
 
+.logo-container{
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+
+
+.logo-footer{
+  height: 3vw;
+  width: 3vw;
+  margin-left: 1vw;
+}
